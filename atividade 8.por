@@ -6,10 +6,11 @@ programa {
     leia(tamanho_arquivo)
     escreva("qual a velocidade do dowload em Mbps ")
     leia(velocidade_net)
-
+    
+    tamanho_arquivo = tamanho_arquivo*8
     dowload = (tamanho_arquivo/velocidade_net) / 60
     velocidade_dowload = m.arredondar(dowload, 2)
-    escreva(velocidade_dowload)
+    escreva("o arquivo ira baixar em ", velocidade_dowload, " minutos")
    
   }
 }
